@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tarmo_Kalk", "Tarmo_Kalk\Tarmo_Kalk.csproj", "{8E7C5548-340A-4BA5-9A96-9AB456B28AED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E7C5548-340A-4BA5-9A96-9AB456B28AED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E7C5548-340A-4BA5-9A96-9AB456B28AED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E7C5548-340A-4BA5-9A96-9AB456B28AED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E7C5548-340A-4BA5-9A96-9AB456B28AED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Tarmo_Kalk\Tarmo_Kalk.csproj
+	EndGlobalSection
+EndGlobal
