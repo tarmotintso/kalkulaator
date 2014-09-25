@@ -46,7 +46,7 @@
                 android:layout_height="40.6dp"
                 android:layout_marginLeft="18dp" />
             <Button
-                android:text="x²"
+                android:text="x^2"
                 android:layout_column="4"
                 android:id="@+id/button_sqared"
                 android:layout_height="41.1dp" />
@@ -79,9 +79,9 @@
                 android:layout_height="40.0dp"
                 android:layout_marginLeft="18dp" />
             <Button
-                android:text="x³"
+                android:text="x^y"
                 android:layout_column="4"
-                android:id="@+id/button_qubed"
+                android:id="@+id/button_xToPowY"
                 android:layout_height="40.1dp" />
         </TableRow>
         <TableRow
@@ -141,7 +141,8 @@
                 android:text="C"
                 android:layout_column="4"
                 android:id="@+id/button_clear"
-                android:layout_height="41.1dp" />
+                android:layout_height="41.1dp"
+                android:enabled="true" />
         </TableRow>
         <TableRow
             android:id="@+id/tableRow4">

@@ -24,10 +24,6 @@ namespace Tarmo_Kalk
 			global::Android.Runtime.ResourceIdManager.UpdateIdValues();
 		}
 		
-		public static void UpdateIdValues()
-		{
-		}
-		
 		public partial class Attribute
 		{
 			
@@ -120,9 +116,6 @@ namespace Tarmo_Kalk
 			// aapt resource value: 0x7f05001d
 			public const int button_posNeg = 2131034141;
 			
-			// aapt resource value: 0x7f05000e
-			public const int button_qubed = 2131034126;
-			
 			// aapt resource value: 0x7f050004
 			public const int button_sin = 2131034116;
 			
@@ -134,6 +127,9 @@ namespace Tarmo_Kalk
 			
 			// aapt resource value: 0x7f050006
 			public const int button_tan = 2131034118;
+			
+			// aapt resource value: 0x7f05000e
+			public const int button_xToPowY = 2131034126;
 			
 			// aapt resource value: 0x7f050000
 			public const int editText1 = 2131034112;
