@@ -19,7 +19,7 @@ namespace Tarmo_Kalk
 
 			SetContentView (Resource.Layout.Main);
 
-			};
+
 		}
 	}
 }
