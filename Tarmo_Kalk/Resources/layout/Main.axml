@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:minWidth="25px"
-    android:minHeight="25px">
+    android:minHeight="25px"
+    android:id="@+id/linearLayout1">
     <EditText
         android:inputType="numberDecimal"
-        android:layout_width="match_parent"
+        android:layout_width="371.6dp"
         android:layout_height="wrap_content"
         android:id="@+id/editText1" />
     <GridLayout
@@ -25,31 +26,54 @@
         <TableRow
             android:id="@+id/tableRow7">
             <Button
-                android:text="sin"
+                android:text="C"
                 android:layout_column="0"
-                android:id="@+id/button_sin"
-                android:layout_height="39.0dp" />
-            <Button
-                android:text="cos"
-                android:layout_column="1"
-                android:id="@+id/button_cos"
-                android:layout_height="42.0dp" />
-            <Button
-                android:text="tan"
-                android:layout_column="2"
-                android:id="@+id/button_tan"
-                android:layout_height="39.5dp" />
+                android:id="@+id/button_clear"
+                android:layout_height="45dp"
+                android:enabled="true"
+                android:layout_width="55dp"
+                android:background="#ff5767da"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp" />
             <Button
                 android:text="←"
-                android:layout_column="3"
+                android:layout_column="1"
                 android:id="@+id/button_backspace"
-                android:layout_height="40.6dp"
-                android:layout_marginLeft="18dp" />
+                android:layout_height="45dp"
+                android:background="#ff5767da"
+                android:layout_width="55dp"
+                android:layout_marginRight="5dp" />
+            <Button
+                android:text="."
+                android:layout_column="2"
+                android:id="@+id/button_decimal"
+                android:layout_height="45dp"
+                android:background="#ff5767da"
+                android:layout_width="55dp" />
+            <Button
+                android:text="+"
+                android:layout_column="3"
+                android:id="@+id/button_plus"
+                android:layout_width="55dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="18dp"
+                android:background="#ff5767da"
+                android:layout_marginRight="5dp" />
             <Button
                 android:text="x^2"
                 android:layout_column="4"
                 android:id="@+id/button_sqared"
-                android:layout_height="41.1dp" />
+                android:layout_height="45dp"
+                android:background="#ff5767da"
+                android:layout_width="55dp"
+                android:layout_marginRight="5dp" />
+            <Button
+                android:text="√"
+                android:layout_column="5"
+                android:id="@+id/button_sqrt"
+                android:layout_width="55dp"
+                android:layout_height="45dp"
+                android:background="#ff5767da" />
         </TableRow>
         <TableRow
             android:id="@+id/tableRow2">
@@ -57,32 +81,51 @@
                 android:text="7"
                 android:layout_column="0"
                 android:id="@+id/button_7"
-                android:layout_width="55.8dp"
-                android:layout_height="41.2dp"
-                android:layout_marginBottom="0.0dp" />
+                android:layout_width="55dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="5dp"
+                android:background="#ff29427d"
+                android:layout_marginRight="5dp" />
             <Button
                 android:text="8"
                 android:layout_column="1"
                 android:id="@+id/button_8"
-                android:layout_height="41.4dp" />
+                android:layout_height="45dp"
+                android:background="#ff29427d"
+                android:layout_width="55dp"
+                android:layout_marginRight="5dp" />
             <Button
                 android:text="9"
                 android:layout_column="2"
                 android:id="@+id/button_9"
-                android:layout_height="41.4dp"
-                android:layout_width="58.5dp" />
+                android:layout_height="45dp"
+                android:layout_width="55dp"
+                android:background="#ff29427d" />
             <Button
-                android:text="+"
+                android:text="-"
                 android:layout_column="3"
-                android:id="@+id/button_plus"
-                android:layout_width="64.2dp"
-                android:layout_height="40.0dp"
-                android:layout_marginLeft="18dp" />
+                android:id="@+id/button__min"
+                android:layout_height="45dp"
+                android:layout_marginLeft="18dp"
+                android:background="#ff5767da"
+                android:layout_width="55dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="-5dp" />
             <Button
                 android:text="x^y"
                 android:layout_column="4"
                 android:id="@+id/button_xToPowY"
-                android:layout_height="40.1dp" />
+                android:layout_height="45dp"
+                android:background="#ff5767da"
+                android:layout_width="55dp"
+                android:layout_marginRight="5dp" />
+            <Button
+                android:text="pi"
+                android:layout_column="5"
+                android:id="@+id/button_pi"
+                android:background="#ff5767da"
+                android:layout_width="55dp"
+                android:layout_height="45dp" />
         </TableRow>
         <TableRow
             android:id="@+id/tableRow3">
@@ -90,88 +133,170 @@
                 android:text="4"
                 android:layout_column="0"
                 android:id="@+id/button_4"
-                android:layout_height="43.1dp" />
+                android:layout_height="45dp"
+                android:background="#ff29427d"
+                android:layout_width="55dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp" />
             <Button
                 android:text="5"
                 android:layout_column="1"
                 android:id="@+id/button_5"
-                android:layout_height="43.2dp" />
+                android:layout_height="45dp"
+                android:background="#ff29427d"
+                android:layout_width="55dp"
+                android:layout_marginRight="5dp" />
             <Button
                 android:text="6"
                 android:layout_column="2"
                 android:id="@+id/button_6"
-                android:layout_height="43.1dp" />
-            <Button
-                android:text="-"
-                android:layout_column="3"
-                android:id="@+id/button__min"
-                android:layout_height="43.0dp"
-                android:layout_marginLeft="18dp" />
-            <Button
-                android:text="√"
-                android:layout_column="4"
-                android:id="@+id/button_sqrt"
-                android:layout_width="66.0dp"
-                android:layout_height="44.0dp" />
-        </TableRow>
-        <TableRow
-            android:id="@+id/tableRow5">
-            <Button
-                android:text="1"
-                android:layout_column="0"
-                android:id="@+id/button_1"
-                android:layout_height="39.8dp" />
-            <Button
-                android:text="2"
-                android:layout_column="1"
-                android:id="@+id/button_2"
-                android:layout_height="40.4dp" />
-            <Button
-                android:text="3"
-                android:layout_column="2"
-                android:id="@+id/button_3"
-                android:layout_height="42.2dp" />
+                android:layout_height="45dp"
+                android:background="#ff29427d"
+                android:layout_width="55dp" />
             <Button
                 android:text="*"
                 android:layout_column="3"
                 android:id="@+id/button_multiply"
-                android:layout_height="38.1dp"
-                android:layout_marginLeft="18dp" />
+                android:layout_height="45dp"
+                android:layout_marginLeft="18dp"
+                android:background="#ff5767da"
+                android:layout_width="55dp"
+                android:layout_marginRight="5dp" />
             <Button
-                android:text="C"
+                android:text="sin"
                 android:layout_column="4"
-                android:id="@+id/button_clear"
-                android:layout_height="41.1dp"
-                android:enabled="true" />
+                android:id="@+id/button_sin"
+                android:layout_height="45dp"
+                android:background="#ff5767da"
+                android:layout_width="55dp"
+                android:layout_marginRight="5dp" />
+            <RadioButton
+                android:text="Hex"
+                android:layout_column="5"
+                android:id="@+id/radioButton1_hex"
+                android:background="#ff5767da"
+                android:layout_width="55dp"
+                android:layout_height="45dp"
+                android:textSize="12dp"
+                android:layout_marginTop="-2dp"
+                android:textStyle="bold"
+                android:textDirection="inherit" />
         </TableRow>
         <TableRow
-            android:id="@+id/tableRow4">
+            android:id="@+id/tableRow5"
+            android:layout_marginRight="2dp"
+            android:layout_width="55dp"
+            android:layout_height="40dp">
             <Button
-                android:text="0"
+                android:text="1"
                 android:layout_column="0"
-                android:id="@+id/button_0"
-                android:layout_height="42.2dp" />
+                android:id="@+id/button_1"
+                android:layout_height="45dp"
+                android:background="#ff29427d"
+                android:layout_width="55dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp" />
             <Button
-                android:text="+/-"
+                android:text="2"
                 android:layout_column="1"
-                android:id="@+id/button_posNeg"
-                android:layout_height="39.5dp" />
+                android:id="@+id/button_2"
+                android:layout_height="45dp"
+                android:background="#ff29427d"
+                android:layout_width="55dp"
+                android:layout_marginRight="5dp" />
             <Button
-                android:text="."
+                android:text="3"
                 android:layout_column="2"
-                android:id="@+id/button_decimal"
-                android:layout_height="39.5dp" />
+                android:id="@+id/button_3"
+                android:layout_height="45dp"
+                android:background="#ff29427d"
+                android:layout_width="55dp" />
             <Button
                 android:text="/"
                 android:layout_column="3"
                 android:id="@+id/button_div"
-                android:layout_height="39.6dp"
-                android:layout_marginLeft="18dp" />
+                android:layout_height="45dp"
+                android:layout_marginLeft="18dp"
+                android:background="#ff5767da"
+                android:layout_width="55dp"
+                android:layout_marginRight="5dp" />
+            <Button
+                android:text="cos"
+                android:layout_column="4"
+                android:id="@+id/button_cos"
+                android:layout_height="45dp"
+                android:background="#ff5767da"
+                android:layout_width="55dp"
+                android:layout_marginRight="5dp" />
+            <RadioButton
+                android:text="Dec"
+                android:layout_column="5"
+                android:id="@+id/radioButton2_dec"
+                android:background="#ff5767da"
+                android:layout_width="55dp"
+                android:layout_height="45dp"
+                android:textSize="12dp"
+                android:layout_marginTop="-2dp"
+                android:editable="true"
+                android:textStyle="bold"
+                android:textDirection="inherit" />
+        </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableLayout2">
+        <TableRow
+            android:id="@+id/tableRow8">
+            <Button
+                android:text="0"
+                android:id="@+id/button_0"
+                android:background="#ff29427d"
+                android:layout_column="0"
+                android:layout_width="115dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="-3dp" />
+            <Button
+                android:text="+/-"
+                android:id="@+id/button_posNeg"
+                android:background="#ff29427d"
+                android:layout_column="1"
+                android:layout_width="55dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="-3dp" />
             <Button
                 android:text="="
-                android:layout_column="4"
                 android:id="@+id/button_equals"
-                android:layout_height="40.0dp" />
+                android:background="#ff28b7c2"
+                android:layout_column="2"
+                android:layout_width="55dp"
+                android:layout_height="42dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="-1dp" />
+            <Button
+                android:text="tan"
+                android:id="@+id/button_tan"
+                android:background="#ff5767da"
+                android:layout_column="3"
+                android:layout_width="55dp"
+                android:layout_height="42dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="-1dp" />
+            <RadioButton
+                android:text="Bin"
+                android:id="@+id/radioButton3_bin"
+                android:background="#ff5767da"
+                android:textSize="12dp"
+                android:layout_column="4"
+                android:layout_width="55dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="-2dp"
+                android:textStyle="bold"
+                android:textDirection="inherit" />
         </TableRow>
     </TableLayout>
 </LinearLayout>

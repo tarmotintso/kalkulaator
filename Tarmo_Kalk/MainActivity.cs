@@ -12,6 +12,9 @@ namespace Tarmo_Kalk
 	[Activity (Label = "Tarmo Kalkulaator", MainLauncher = true, Icon = "@drawable/icon")]
 	public class MainActivity : Activity
 	{
+		string opr;
+		double operand1, operand2, operand3, result;
+
 		//declare button and other variables
 		Button btn_1;
 		Button btn_2;
@@ -40,7 +43,12 @@ namespace Tarmo_Kalk
 		Button btn_minus;
 		Button btn_multiply;
 		Button btn_divide;
-	
+
+		Button btn_pi;
+		Button btn_hex;
+		Button btn_dec;
+		Button btn_bin;
+
 
 
 		EditText textBox1;
@@ -53,8 +61,7 @@ namespace Tarmo_Kalk
 
 		}
 
-
-		protected override void OnPostCreate(Bundle bundle, object sender, EventArgs e)
+		protected override void OnPostCreate(Bundle bundle)
 		{
 			//after app load define new class for buttons
 			base.OnPostCreate (bundle);
@@ -95,7 +102,12 @@ namespace Tarmo_Kalk
 			btn_plus = FindViewById<Button> (Resource.Id.button_plus);
 			btn_minus = FindViewById<Button> (Resource.Id.button__min);
 			btn_multiply = FindViewById<Button> (Resource.Id.button_multiply);
-			btn_divide = FindViewById<Button> (Resource.Id.button_div);
+			btn_hex = FindViewById<Button> (Resource.Id.button_div);
+
+			btn_hex = FindViewById<Button> (Resource.Id.radioButton1_hex);
+			btn_dec = FindViewById<Button> (Resource.Id.radioButton2_dec);
+			btn_bin = FindViewById<Button> (Resource.Id.radioButton3_bin);
+			btn_pi = FindViewById<Button> (Resource.Id.button_pi);
 
 			btn_1.Click += delegate { if (equal) { textBox1.Text = ""; equal = false; } textBox1.Text += "1";};
 			btn_2.Click += delegate { if (equal) { textBox1.Text = ""; equal = false; } textBox1.Text += "2";};
@@ -108,8 +120,6 @@ namespace Tarmo_Kalk
 			btn_9.Click += delegate { if (equal) { textBox1.Text = ""; equal = false; } textBox1.Text += "9";};
 			btn_0.Click += delegate { if (equal) { textBox1.Text = ""; equal = false; } textBox1.Text += "0";};
 
-			string opr;
-			double operand1, operand2, operand3, result;
 
 			//decimal code
 			btn_decimal.Click += delegate 
@@ -178,37 +188,35 @@ namespace Tarmo_Kalk
 					}
 					else 
 					{
-					result = operand1 / operand2;
-					textBox1.Text = Convert.ToString(result);
-					break;
+						result = operand1 / operand2;
+						textBox1.Text = Convert.ToString(result);
+						break;
 					}
 				case "x^2":
 					operand1 = Convert.ToDouble(textBox1.Text);
 					result = operand1 * operand1;
+					textBox1.Text = Convert.ToString(result);
 					break;
 				case "x^y":
-					result = System.Math.Pow(Convert.ToDouble(operand1)),Convert.ToDouble(operand2));
+					result = System.Math.Pow(Convert.ToDouble(operand1),Convert.ToDouble(operand2));
 					textBox1.Text = Convert.ToString(result);
 					break;
 				case "√":
 					textBox1.Text = Convert.ToString(System.Math.Sqrt(Convert.ToDouble(textBox1.Text)));
 					break;
-				case "sin":
-					if (textBox1.Text = "")
-					{
-						textBox1.Text = "0";
-					}
-					else
-					{
-						textBox1.Text = Convert.ToString(System.Math.Sin((Convert.ToDouble(System.Math.PI) / 100) * (Convert.ToDouble(textBox1.Text))));
-					}
-					break;
-				case "cos":
 
-					break;
-				case "tan":
+				}
+			};
 
-					break;
+			btn_sin.Click += delegate {
+
+				if (textBox1.Text == "")
+				{
+					textBox1.Text = "0";
+				}
+				else
+				{
+					textBox1.Text = Convert.ToString(System.Math.Sin((Convert.ToDouble(System.Math.PI) / 100) * (Convert.ToDouble(textBox1.Text))));
 				}
 			};
 
